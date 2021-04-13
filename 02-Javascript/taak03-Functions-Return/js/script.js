@@ -1,5 +1,8 @@
-function geefRandomGetalTerug(){                
-    
+function geefRandomGetalTerug(){                    
+    let randomGetal = Math.random();                
+    randomGetal = randomGetal *100 + 1;            
+    randomGetal = Math.floor(randomGetal);          
+    return randomGetal;
 }
 
-console.log(geefRandomGetalTerug());    
+console.log(geefRandomGetalTerug());            

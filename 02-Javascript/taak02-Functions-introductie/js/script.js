@@ -13,13 +13,9 @@ function prompto() {
 prompto()
 console.log(strnaam)
 
-function gekkeleermethode() {
-    confirm("klik")
-    if (confirm == true) {
-       
-    } else {
-        
-    }
+var response = confirm("is "+strnaam+" je naam ?");
+if (response == true) {
+    alert("welkom op pagina")
+} else {
+    alert("dan niet")
 }
-gekkeleermethode()
-console.log(confirm == true))
