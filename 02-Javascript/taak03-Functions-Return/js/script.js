@@ -5,4 +5,4 @@ function geefRandomGetalTerug(){
     return randomGetal;
 }
 
-console.log(geefRandomGetalTerug());            
+geefRandomGetalTerug()     

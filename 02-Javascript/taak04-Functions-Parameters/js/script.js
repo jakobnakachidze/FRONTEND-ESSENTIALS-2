@@ -1,12 +1,13 @@
-function userMath(n1, n2) {
-   let numba1 = prompt("vul een cijfer in");
-   let num2 = prompt("vul nog een cijfer in");
 
-//werktniet
+var vragen = vermenigvulkdiging(prompt("vul zijfer in"), prompt("vul cijfer in"));
 
 
+function vermenigvulkdiging(nr1, nr2) {
+    return nr1*nr2;
+}
 
 
+console.log(vragen);
 
 
 
@@ -452,38 +453,3 @@ function userMath(n1, n2) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   return userMath
-   
-
-} 
