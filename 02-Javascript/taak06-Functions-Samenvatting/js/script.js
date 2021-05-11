@@ -23,6 +23,7 @@ function showRandomNumber2(){
 showRandomNumber2()
 
 function scoreplus() {
+    
     document.querySelector(".score").innerHTML = score + 1;
 }
 
@@ -32,14 +33,41 @@ function geefAntwoord(input) {
     if (input == "hoger") {
         if (getal1 < getal2) {
         console.log("geen punt")
-            
+        document.body.style.backgroundColor = "red";
+        document.querySelector(".score").innerHTML = score;
+        score = score - 1;
+        getal1 = showRandomNumber1()
+        getal2 = showRandomNumber2()
         } else {
+            document.body.style.backgroundColor = "green"; //goed 2
+            console.log("punt gescored");
+            score = score + 1;
+            document.querySelector(".score").innerHTML = score;
+            getal1 = showRandomNumber1();
+            getal2 = showRandomNumber2();
+        }
+    } 
+    if (input == "lager"){
+        if(getal1 > getal2){
+            console.log("punt NIET gescored");
+            document.body.style.backgroundColor = "red"; //niet goed  
+            score = score - 1;
+            document.querySelector(".score").innerHTML = score;
+            getal1 = showRandomNumber1();
+            getal2 = showRandomNumber2();
+        } else{
+            document.body.style.backgroundColor = "green";
+            console.log("punt gescored");
+            score = score + 1;
+            console.log(score);
+            document.querySelector(".score").innerHTML = score;
+            getal1 = showRandomNumber1();
+            getal2 = showRandomNumber2();
+            // goed
+            
             
         }
-    } else {
-        console.log("wel  punt")
-        scoreplus()
-        }
-
- }
+    }
+}  
+ 
 
