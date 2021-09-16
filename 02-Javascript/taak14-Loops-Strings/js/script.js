@@ -1,9 +1,6 @@
-function outputLetters(str){
-    for (let i = 0; i < str.length; i++) {
-        const element = array[i];
-        
-    }
-}
+stringvar = prompt("wat wil je op het bord");   
 
-var voorbeeldString = "Dit is een array van letters";
-console.log(voorbeeldString.length); // geeft terug: 
+for (i = 0; i < stringvar.length; i++) {
+    console.log(stringvar[i]);
+    
+}
