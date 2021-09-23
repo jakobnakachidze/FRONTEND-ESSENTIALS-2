@@ -1,8 +1,19 @@
-var arrProductPrijs = [5,10,20,50,100];
-var arrProductKorting = [0.95, 0.85, 0.98, 1.21];
-var totaal = 0;
+var arraya = new Array(11);
 
-function rondaf(getal, aantalplekkenachterkomma){
-    const x = Math.pow(10, aantalplekkenachterkomma);
-    return Math.round(getal * x)/x;
+for (let i = 0; i < arraya.length; i++) {
+    arraya[i] = new Array(11);
+}
+
+
+
+
+
+
+
+for (i = 0; i <=10; i++) {
+    for (b = 0; b <=10; b++) {
+        arraya[b][i] = b+i;
+        console.log(arraya[b][i]);
+    }
+    
 }
